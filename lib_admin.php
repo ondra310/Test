@@ -1,9 +1,10 @@
 <?PHP
-
+//neco se musi zmenit
 //--------------------------------------------------------------------------------------------------------opEditCentre
 /** zobrazi menu pro spouštění dalších editačních funkcí */
-function opEditCentre(){
+function opEditCentre($silent){
    if (authorizeToLevelSilent(3)):
+   		echo "not Silent";
       $path = urlPath();
       echo '<div class="cona"><!--fc lib_admin/F opEditCentre/C -->
           <h4>'._('Editační centrum, zvolte oblast, kterou si přejete editovat').'</h4>
